@@ -5734,6 +5734,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275562282}
     m_Modifications:
+    - target: {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1468290807321339647, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
       propertyPath: m_Name
       value: Stump (3)
@@ -5782,7 +5786,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
 --- !u!4 &148204913 stripped
 Transform:
@@ -7085,6 +7090,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275562282}
     m_Modifications:
+    - target: {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1468290807321339647, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
       propertyPath: m_Name
       value: Stump (2)
@@ -7133,7 +7142,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
 --- !u!4 &187607828 stripped
 Transform:
@@ -26062,7 +26072,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -32572,6 +32582,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275562282}
     m_Modifications:
+    - target: {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1468290807321339647, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
       propertyPath: m_Name
       value: Stump (1)
@@ -32620,7 +32634,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
 --- !u!4 &775187730 stripped
 Transform:
@@ -32639,7 +32654,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -32750,7 +32765,7 @@ Transform:
   m_GameObject: {fileID: 776276882}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -9.63, y: 0.69547, z: -18.94}
-  m_LocalScale: {x: 0.6310144, y: 0.6310144, z: 0.6310144}
+  m_LocalScale: {x: 0.73140883, y: 0.73140883, z: 0.73140883}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 938681359}
@@ -37207,6 +37222,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275562282}
     m_Modifications:
+    - target: {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1468290807321339647, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
       propertyPath: m_Name
       value: Stump
@@ -37255,7 +37274,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
 --- !u!4 &871492299 stripped
 Transform:
@@ -46733,7 +46753,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -55772,6 +55792,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275562282}
     m_Modifications:
+    - target: {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1468290807321339647, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
       propertyPath: m_Name
       value: Stump (4)
@@ -55820,7 +55844,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
 --- !u!4 &1321886280 stripped
 Transform:
@@ -66601,6 +66626,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 275562282}
     m_Modifications:
+    - target: {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1468290807321339647, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
       propertyPath: m_Name
       value: Stump (5)
@@ -66649,7 +66678,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 735124314849506760, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d7a0ef0f4cc5d8243b3fe2d8c2769ccc, type: 3}
 --- !u!4 &1564413968 stripped
 Transform:
@@ -66668,7 +66698,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -75473,7 +75503,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -87897,7 +87927,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0

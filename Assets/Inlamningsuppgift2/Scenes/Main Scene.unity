@@ -50143,7 +50143,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1177245201}
   m_LocalRotation: {x: 0.36994034, y: 0.60495377, z: -0.36407217, w: 0.6038432}
-  m_LocalPosition: {x: 0, y: 0, z: -12.040683}
+  m_LocalPosition: {x: 0, y: 0, z: -12.041}
   m_LocalScale: {x: 0.052793093, y: 0.052793093, z: 0.05279309}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -50152,8 +50152,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 62.532, y: 90.702, z: 0.982}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -11.819018, y: 0.85903865}
-  m_SizeDelta: {x: 20, y: 5}
+  m_AnchoredPosition: {x: -11.817, y: 0.854}
+  m_SizeDelta: {x: 20.12, y: 5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1177245203
 MonoBehaviour:
@@ -50180,10 +50180,10 @@ MonoBehaviour:
     A bowling adventure on nature''s
     soft land.
 
-    The lanes wind through the trees, a playful art,
+    But be aware, there is a twist to the game,
 
-    Come, join
-    the game, let the rolling start.'
+    Only strikes
+    bring triumph, be sure to aim.'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -50210,8 +50210,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 3
-  m_fontSizeBase: 3
+  m_fontSize: 5.32
+  m_fontSizeBase: 5.32
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -50246,7 +50246,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -0.1371355, y: 0.9839277, z: 12.962326, w: 2.2938974}
+  m_margin: {x: -0.1371355, y: 0.40265954, z: 12.962326, w: -0.91987455}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   _SortingLayer: 0

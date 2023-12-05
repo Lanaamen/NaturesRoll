@@ -483,12 +483,22 @@ ModelImporter:
   - first:
       137: 13700000
     second: Rabbit_LowPoly
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RabbiT
+    second: {fileID: 2100000, guid: 42328a4bd7720714192fac0d1e340a13, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RabbiT_Eye
+    second: {fileID: 2100000, guid: ff069daff6772804eb7f0462e5f81ec7, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0
     materialSearch: 1
-    materialLocation: 0
+    materialLocation: 1
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

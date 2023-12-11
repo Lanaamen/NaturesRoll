@@ -16,7 +16,7 @@ public class MusicLaneButton : MonoBehaviour
     //Här skapar vi en funktion för när knappen trycks.
     public void OnButtonClick()
     {
-        // Iterate through all audio sources and stop them
+        // Denna foreach sas går igenom alla audiosources och stoppar audion om den spelas.
         foreach (AudioSource audioSource in allAudioSources)
         {
             if (audioSource.isPlaying && audioSource.gameObject != gameObject)

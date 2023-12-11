@@ -5,26 +5,29 @@ using UnityEngine.UI;
 
 public class BowlingReset : MonoBehaviour
 {
-    public GameObject bowlingStone; // Assign this in the inspector
-    public Transform[] individualKeggles; // Assign each keggle in the inspector
-
+    //Variabel för bowlingStone
+    public GameObject bowlingStone;
+    //Variabel som tillåter oss att dra in flera gameobjekt i inspektorfönstret och registrera varderas transform komponent
+    //detta gör vi för varje inviduell bowlingstump
+    public Transform[] individualStumps;
+    //Nedan bevaras resterade delar av transformkomponenten
     private Vector3 initialBowlingStonePosition;
     private Quaternion initialBowlingStoneRotation;
-    private Vector3[] initialKegglePositions;
-    private Quaternion[] initialKeggleRotations;
+    private Vector3[] initialStumpPositions;
+    private Quaternion[] initialStumpRotations;
 
     private void Start()
     {
         Button resetButton = GetComponent<Button>();
 
-        if (resetButton != null)
+        /*if (resetButton != null)
         {
             resetButton.onClick.AddListener(ResetGame);
         }
         else
         {
             Debug.LogError("No Button component found on the GameObject. Attach this script to a UI button.");
-        }
+        }*/
 
         // Store the initial position and rotation of the bowling stone
         if (bowlingStone != null)
@@ -38,15 +41,15 @@ public class BowlingReset : MonoBehaviour
         }
 
         // Store the initial position and rotation of each individual keggle
-        initialKegglePositions = new Vector3[individualKeggles.Length];
-        initialKeggleRotations = new Quaternion[individualKeggles.Length];
+        initialStumpPositions = new Vector3[individualStumps.Length];
+        initialStumpRotations = new Quaternion[individualStumps.Length];
 
-        for (int i = 0; i < individualKeggles.Length; i++)
+        for (int i = 0; i < individualStumps.Length; i++)
         {
-            if (individualKeggles[i] != null)
+            if (individualStumps[i] != null)
             {
-                initialKegglePositions[i] = individualKeggles[i].position;
-                initialKeggleRotations[i] = individualKeggles[i].rotation;
+                initialStumpPositions[i] = individualStumps[i].position;
+                initialStumpRotations[i] = individualStumps[i].rotation;
             }
             else
             {
@@ -69,12 +72,12 @@ public class BowlingReset : MonoBehaviour
         }
 
         // Reset each individual keggle to its initial position
-        for (int i = 0; i < individualKeggles.Length; i++)
+        for (int i = 0; i < individualStumps.Length; i++)
         {
-            if (individualKeggles[i] != null)
+            if (individualStumps[i] != null)
             {
-                individualKeggles[i].position = initialKegglePositions[i];
-                individualKeggles[i].rotation = initialKeggleRotations[i];
+                individualStumps[i].position = initialStumpPositions[i];
+                individualStumps[i].rotation = initialStumpRotations[i];
             }
             else
             {

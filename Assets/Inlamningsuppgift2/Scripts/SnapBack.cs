@@ -15,9 +15,10 @@ public class SnapBack : MonoBehaviour
     //En bool som håller koll på när ljudet spelas
     private bool isPlaying = false;
 
-    //[Header("Events")]
-    //public UnityEvent onGrab;
-    //public UnityEvent onRelease;
+    //Deklarerar onGrab/OnRelease unityevents
+    [Header("Events")]
+    public UnityEvent onGrab;
+    public UnityEvent onRelease;
 
     [Header("Audio")]
     public AudioClip grabSound; //Gör de möjligt att lägga till audioklipp i inspektorfönstret
@@ -40,7 +41,7 @@ public class SnapBack : MonoBehaviour
         audioSource.loop = true;
 
         //När objektet greppas/släpps läggs en lyssnare till (addlistener)
-        //som körs när onselect(enter/exit) händelsen inträffar (ongrab/onrelease)
+        //som körs när select(enter/exit) händelsen inträffar (ongrab/onrelease)
 
         //Prenumeration på onselectenter händelsen för att detektera när objektet grips
         grabInteractable.onSelectEntered.AddListener(OnGrab);

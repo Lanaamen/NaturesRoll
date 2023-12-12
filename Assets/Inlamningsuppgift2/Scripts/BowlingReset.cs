@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BowlingReset : MonoBehaviour
 {
-    public GameObject wonScreen;
+    public GameObject youWonScreen;
     //Variabel för bowlingStone
     public GameObject bowlingStone;
     //Variabel som tillåter oss att dra in flera gameobjekt i inspektorfönstret och registrera varderas transform komponent
@@ -50,8 +50,7 @@ public class BowlingReset : MonoBehaviour
 
     public void ResetGame()
     {
-        //wonScreen.setActive(false);
-
+        youWonScreen.GetComponent<YouWon>().Restart();
         //Sätter tillbaka bowlingklotet till sin initiala position
         if (bowlingStone != null)
         {
@@ -66,6 +65,7 @@ public class BowlingReset : MonoBehaviour
             {
                 individualStumps[i].position = initialStumpPositions[i];
                 individualStumps[i].rotation = initialStumpRotations[i];
+                individualStumps[i].gameObject.SetActive(true);
             }
 
         }

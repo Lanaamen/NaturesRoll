@@ -4,16 +4,33 @@ using UnityEngine;
 
 public class YouWon : MonoBehaviour
 {
-    public Transform[] individualStumps;
-    public GameObject bowlingStone;
-    
+    private int numberOfStumps=6;
+    public GameObject youWonScreen;
 
     // Start is called before the first frame update
-    void Start()
+    public void Restart()
     {
-        
+       numberOfStumps=6; 
+       youWonScreen.SetActive(false);
     }
 
-    //void onCollisionEnter(collision collision)
+  private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Bowlingstumps"))
+        {
+            if (numberOfStumps> 0) 
+            {
+                numberOfStumps=numberOfStumps-1;
+                collision.collider.gameObject.SetActive(false);
+                if (numberOfStumps == 0) 
+                
+                {
+                    youWonScreen.SetActive(true);
+                }
+            }
+            
+        }
+    }
+
    
 }

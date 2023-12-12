@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BowlingReset : MonoBehaviour
 {
+    public GameObject wonScreen;
     //Variabel för bowlingStone
     public GameObject bowlingStone;
     //Variabel som tillåter oss att dra in flera gameobjekt i inspektorfönstret och registrera varderas transform komponent
@@ -24,23 +25,16 @@ public class BowlingReset : MonoBehaviour
         {
             resetButton.onClick.AddListener(ResetGame);
         }
-        else
-        {
-            Debug.LogError("No Button component found on the GameObject. Attach this script to a UI button.");
-        }*/
+       */
 
-        // Store the initial position and rotation of the bowling stone
+        //Sparar bowlingklotets initiala position och rotation
         if (bowlingStone != null)
         {
             initialBowlingStonePosition = bowlingStone.transform.position;
             initialBowlingStoneRotation = bowlingStone.transform.rotation;
         }
-        else
-        {
-            Debug.LogError("Bowling stone not set. Assign it in the inspector.");
-        }
 
-        // Store the initial position and rotation of each individual keggle
+        //Sparar varje inviduella stumps initiala position och rotiation
         initialStumpPositions = new Vector3[individualStumps.Length];
         initialStumpRotations = new Quaternion[individualStumps.Length];
 
@@ -51,27 +45,21 @@ public class BowlingReset : MonoBehaviour
                 initialStumpPositions[i] = individualStumps[i].position;
                 initialStumpRotations[i] = individualStumps[i].rotation;
             }
-            else
-            {
-                Debug.LogError($"Individual keggle {i + 1} not set. Assign it in the inspector.");
-            }
         }
     }
 
-    private void ResetGame()
+    public void ResetGame()
     {
-        // Reset the bowling stone to its initial position
+        //wonScreen.setActive(false);
+
+        //Sätter tillbaka bowlingklotet till sin initiala position
         if (bowlingStone != null)
         {
             bowlingStone.transform.position = initialBowlingStonePosition;
             bowlingStone.transform.rotation = initialBowlingStoneRotation;
         }
-        else
-        {
-            Debug.LogError("Bowling stone not set. Assign it in the inspector.");
-        }
 
-        // Reset each individual keggle to its initial position
+        //Sätter tillbaka varje inviduella stump till respektive initiala position
         for (int i = 0; i < individualStumps.Length; i++)
         {
             if (individualStumps[i] != null)
@@ -79,10 +67,7 @@ public class BowlingReset : MonoBehaviour
                 individualStumps[i].position = initialStumpPositions[i];
                 individualStumps[i].rotation = initialStumpRotations[i];
             }
-            else
-            {
-                Debug.LogError($"Individual keggle {i + 1} not set. Assign it in the inspector.");
-            }
+
         }
     }
 }

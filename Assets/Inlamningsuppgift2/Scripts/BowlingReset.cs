@@ -21,18 +21,17 @@ public class BowlingReset : MonoBehaviour
     private void Start()
     {
 
-        //Button resetButton = GetComponent<Button>();
-
-
         //Sparar bowlingklotets initiala position och rotation
         initialBowlingStonePosition = bowlingStone.transform.position;
         initialBowlingStoneRotation = bowlingStone.transform.rotation;
 
 
-        //Sparar varje inviduella stumps initiala position och rotiation
+        //Skapar en array för att spara de initiala positionerna för varje stump
         initialStumpPositions = new Vector3[individualStumps.Length];
+        //Skapar en array för att spara de initiala rotationerna för varje stump
         initialStumpRotations = new Quaternion[individualStumps.Length];
 
+        //loopar igenom varje inviduella stump och lagrar varje individuella postion/rotation
         for (int i = 0; i < individualStumps.Length; i++)
         {
             initialStumpPositions[i] = individualStumps[i].position;
@@ -42,12 +41,9 @@ public class BowlingReset : MonoBehaviour
 
     public void ResetBowlingStone()
     {
-
         //Sätter tillbaka bowlingklotet till sin initiala position
         bowlingStone.transform.position = initialBowlingStonePosition;
         bowlingStone.transform.rotation = initialBowlingStoneRotation;
-
-
     }
     public void ResetBowlingStumps()
     {

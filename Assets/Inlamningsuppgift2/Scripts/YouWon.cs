@@ -11,7 +11,7 @@ public class YouWon : MonoBehaviour
     // i skriptet bowlingReset, så att även dessa återställs när stumparna återställs
     public void Restart()
     {
-        //Återställer numberOfStumps till 6
+       //Återställer numberOfStumps till 6
        numberOfStumps=6; 
        //Sätter youWonScreen som falsk
        youWonScreen.SetActive(false);
@@ -30,7 +30,7 @@ public class YouWon : MonoBehaviour
                 numberOfStumps=numberOfStumps-1;
                 collision.collider.gameObject.SetActive(false);
 
-                //om numberOfStumps är 0 eller likamed 0 så aktiveras youWonScreen
+                //Om numberOfStumps är 0 eller likamed 0 så aktiveras youWonScreen
                 if (numberOfStumps == 0) 
                 
                 {

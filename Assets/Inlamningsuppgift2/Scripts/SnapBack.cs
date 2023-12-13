@@ -56,7 +56,7 @@ public class SnapBack : MonoBehaviour
         // Objektet greppas
         onGrab.Invoke();
 
-        // När objektet föst greppas spelas ljudet
+        // När objektet först greppas spelas ljudet
         if (!isPlaying && grabSound != null && audioSource != null)
         {
             audioSource.clip = grabSound;

@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class BowlingReset : MonoBehaviour
 {
+    //Variabel för YouWonScreen
     public GameObject youWonScreen;
     //Variabel för bowlingStone
     public GameObject bowlingStone;
@@ -19,20 +20,14 @@ public class BowlingReset : MonoBehaviour
 
     private void Start()
     {
-        Button resetButton = GetComponent<Button>();
 
-        /*if (resetButton != null)
-        {
-            resetButton.onClick.AddListener(ResetGame);
-        }
-       */
+        //Button resetButton = GetComponent<Button>();
+
 
         //Sparar bowlingklotets initiala position och rotation
-        if (bowlingStone != null)
-        {
-            initialBowlingStonePosition = bowlingStone.transform.position;
-            initialBowlingStoneRotation = bowlingStone.transform.rotation;
-        }
+        initialBowlingStonePosition = bowlingStone.transform.position;
+        initialBowlingStoneRotation = bowlingStone.transform.rotation;
+
 
         //Sparar varje inviduella stumps initiala position och rotiation
         initialStumpPositions = new Vector3[individualStumps.Length];
@@ -40,36 +35,53 @@ public class BowlingReset : MonoBehaviour
 
         for (int i = 0; i < individualStumps.Length; i++)
         {
-            if (individualStumps[i] != null)
-            {
-                initialStumpPositions[i] = individualStumps[i].position;
-                initialStumpRotations[i] = individualStumps[i].rotation;
-            }
+            initialStumpPositions[i] = individualStumps[i].position;
+            initialStumpRotations[i] = individualStumps[i].rotation;
         }
     }
 
-    public void ResetGame()
+    public void ResetBowlingStone()
     {
-        youWonScreen.GetComponent<YouWon>().Restart();
+
         //Sätter tillbaka bowlingklotet till sin initiala position
-        if (bowlingStone != null)
-        {
-            bowlingStone.transform.position = initialBowlingStonePosition;
-            bowlingStone.transform.rotation = initialBowlingStoneRotation;
-        }
+        bowlingStone.transform.position = initialBowlingStonePosition;
+        bowlingStone.transform.rotation = initialBowlingStoneRotation;
+
+
+    }
+    public void ResetBowlingStumps()
+    {
+        //Hämtar YouWonscripts-komponenten från gameobjektet youwonscreen och kallar på restartmetoden
+        youWonScreen.GetComponent<YouWon>().Restart();
 
         //Sätter tillbaka varje inviduella stump till respektive initiala position
         for (int i = 0; i < individualStumps.Length; i++)
         {
-            if (individualStumps[i] != null)
-            {
-                individualStumps[i].position = initialStumpPositions[i];
-                individualStumps[i].rotation = initialStumpRotations[i];
-                individualStumps[i].gameObject.SetActive(true);
-            }
+            //Hämtar Rigidbodykomponenten för respektive inviduella stumpar
+            Rigidbody stumpRigidbody = individualStumps[i].GetComponent<Rigidbody>();
 
+            // Sparar aktuell gravitation
+            Vector3 gravity = Physics.gravity;
+
+            // Stänger av gravitation under återställningen
+            Physics.gravity = Vector3.zero;
+
+            //Fryser rigidbodys fysikinteraktioner innan återställning utav stumparna
+            stumpRigidbody.constraints = RigidbodyConstraints.FreezeAll;
+
+            //Återställer position och rotation för varje inviduella stump
+            individualStumps[i].position = initialStumpPositions[i];
+            individualStumps[i].rotation = initialStumpRotations[i];
+
+            //Återställer fysikinteraktionerna för varje inviduella stump
+            stumpRigidbody.constraints = RigidbodyConstraints.None;
+
+            //Återaktiverar varje inviduella stump
+            individualStumps[i].gameObject.SetActive(true);
+
+            // Återställer gravitation till det ursprungliga värdet
+            Physics.gravity = gravity;
         }
     }
+
 }
-
-

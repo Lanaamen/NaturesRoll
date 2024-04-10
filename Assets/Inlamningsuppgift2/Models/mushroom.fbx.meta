@@ -9,6 +9,11 @@ ModelImporter:
       assembly: UnityEngine.CoreModule
       name: Mushrooms_bqm
     second: {fileID: 2100000, guid: c10cc768591e62942ae4bc4b2398ae2e, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Mushrooms_bqm.001
+    second: {fileID: 2100000, guid: c10cc768591e62942ae4bc4b2398ae2e, type: 2}
   materials:
     materialImportMode: 1
     materialName: 0

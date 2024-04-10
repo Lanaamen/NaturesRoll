@@ -10065,6 +10065,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 876708321}
     m_Modifications:
+    - target: {fileID: 304530122840577317, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1099818784703987519, guid: 0f039ac900e078e4799fe30a1481b40e, type: 3}
     - target: {fileID: 5884186569240199892, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -38407,6 +38411,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 876708321}
     m_Modifications:
+    - target: {fileID: 304530122840577317, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1099818784703987519, guid: 0f039ac900e078e4799fe30a1481b40e, type: 3}
     - target: {fileID: 5884186569240199892, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -56271,6 +56279,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 876708321}
     m_Modifications:
+    - target: {fileID: 304530122840577317, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1099818784703987519, guid: 0f039ac900e078e4799fe30a1481b40e, type: 3}
     - target: {fileID: 5884186569240199892, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
       propertyPath: m_RootOrder
       value: 2

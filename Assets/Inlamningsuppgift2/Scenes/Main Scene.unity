@@ -8908,6 +8908,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom 2
       objectReference: {fileID: 0}
+    - target: {fileID: 7946801679342904823, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
+      propertyPath: m_Name
+      value: mushroom lod00
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
 --- !u!4 &399737326
@@ -8941,7 +8945,7 @@ GameObject:
   - component: {fileID: 399737331}
   - component: {fileID: 399737332}
   m_Layer: 0
-  m_Name: Misc_Mushroom-Amanita_A_spring-summer-autumn-winter
+  m_Name: mushroom lod00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -35832,6 +35836,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7946801679342904823, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
+      propertyPath: m_Name
+      value: mushroom lod00
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
 --- !u!4 &1440927387
@@ -35865,7 +35873,7 @@ GameObject:
   - component: {fileID: 1440927391}
   - component: {fileID: 1440927392}
   m_Layer: 0
-  m_Name: Misc_Mushroom-Amanita_A_spring-summer-autumn-winter
+  m_Name: mushroom lod00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -52803,6 +52811,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mushroom 3
       objectReference: {fileID: 0}
+    - target: {fileID: 7946801679342904823, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
+      propertyPath: m_Name
+      value: mushroom lod00
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd64b439bd08f504f8b15dbb6a23e232, type: 3}
 --- !u!4 &2112855364
@@ -52836,7 +52848,7 @@ GameObject:
   - component: {fileID: 2112855369}
   - component: {fileID: 2112855370}
   m_Layer: 0
-  m_Name: Misc_Mushroom-Amanita_A_spring-summer-autumn-winter
+  m_Name: mushroom lod00
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

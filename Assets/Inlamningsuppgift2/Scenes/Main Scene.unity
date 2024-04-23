@@ -20,11 +20,11 @@ RenderSettings:
   m_FogDensity: 0.01
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
-  m_AmbientSkyColor: {r: 0.020078292, g: 0.6615073, b: 0.8867924, a: 1}
-  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}
-  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}
+  m_AmbientSkyColor: {r: 1, g: 0.797857, b: 0.61698115, a: 1}
+  m_AmbientEquatorColor: {r: 1, g: 1, b: 1, a: 1}
+  m_AmbientGroundColor: {r: 0.046683528, g: 0.0754717, b: 0, a: 1}
   m_AmbientIntensity: 1
-  m_AmbientMode: 3
+  m_AmbientMode: 1
   m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 2100000, guid: 39cace2863926444a9a78daa8ae26413, type: 2}
   m_HaloStrength: 0.5
@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2027196467}
-  m_IndirectSpecularColor: {r: 0.60065544, g: 0.45199844, b: 0.34016716, a: 1}
+  m_IndirectSpecularColor: {r: 0.597686, g: 0.45233938, b: 0.33867973, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 887ebade5f285914f9ccb75ed06d595d, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: 32e95a0cf13f9bd4894a539134620982, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 73446d407a070124d92880a625fbb9b8, type: 2}
 --- !u!196 &4
 NavMeshSettings:
@@ -15715,7 +15715,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0f039ac900e078e4799fe30a1481b40e, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f039ac900e078e4799fe30a1481b40e, type: 3}
       propertyPath: m_LocalScale.x
@@ -73868,13 +73868,13 @@ Transform:
   - {fileID: 1120125795}
   - {fileID: 1188957946}
   - {fileID: 1206541473}
+  - {fileID: 1341853792}
   - {fileID: 1245504708}
   - {fileID: 1308059178}
   - {fileID: 1317032966}
   - {fileID: 1311847198}
   - {fileID: 1323857159}
   - {fileID: 1327037469}
-  - {fileID: 1341853792}
   - {fileID: 1369083878}
   - {fileID: 1372344058}
   - {fileID: 1441581391}
@@ -86282,7 +86282,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 0f039ac900e078e4799fe30a1481b40e, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 0f039ac900e078e4799fe30a1481b40e, type: 3}
       propertyPath: m_LocalScale.x
@@ -94445,7 +94445,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &2027196467
 Light:
   m_ObjectHideFlags: 0
